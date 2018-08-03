@@ -24,6 +24,7 @@ import { ProjectPageModule } from '../pages/project/project.module';
   ],
   imports: [
     BrowserModule,
+    ProjectPageModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],

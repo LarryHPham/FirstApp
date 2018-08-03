@@ -1,19 +1,27 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
+
 import { ProjectPage } from './project';
 
 // sub pages
 import { ProjectForgeViewerPage } from './project-forge-viewer/project-forge-viewer';
-import { ProjectSchedulePageModule } from './project-schedule/project-schedule.module';
+import { ProjectSchedulePage } from './project-schedule/project-schedule';
+import { ProjectSprintPage } from './project-sprint/project-sprint';
 
 @NgModule({
   declarations: [
-    ProjectPage,
     ProjectForgeViewerPage,
+    ProjectSchedulePage,
+    ProjectSprintPage,
   ],
   imports: [
     IonicPageModule.forChild(ProjectPage),
-    ProjectSchedulePageModule
+  ],
+  entryComponents: [
+    ProjectForgeViewerPage,
+    ProjectSchedulePage,
+    ProjectSprintPage,
   ],
 })
-export class ProjectPageModule {}
+
+export class ProjectPageModule { }

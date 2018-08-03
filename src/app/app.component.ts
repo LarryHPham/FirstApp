@@ -34,7 +34,7 @@ export class MyApp {
       { title: 'My First List', component: ListPage },
       { title: 'Project Page', component: ProjectPage },
     ];
-    console.log(this.pages);
+    console.log('App Level Pages', this.pages);
   }
 
   initializeApp() {
