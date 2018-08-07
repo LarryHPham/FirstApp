@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
 
-import { ProjectForgeViewerPage } from './project-forge-viewer/project-forge-viewer';
+// import { ProjectForgeViewerPage } from './project-forge-viewer/project-forge-viewer';
 import { ProjectSchedulePage } from './project-schedule/project-schedule';
 import { ProjectSprintPage } from './project-sprint/project-sprint';
 /**
@@ -19,7 +19,7 @@ import { ProjectSprintPage } from './project-sprint/project-sprint';
 export class ProjectPage {
   @ViewChild(Nav) nav: Nav;
   // make HelloIonicPage the root (or first) page
-  rootPage = ProjectSchedulePage;
+  rootPage = null;
   pages: Array<{title: string, component: any}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

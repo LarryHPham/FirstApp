@@ -1,12 +1,6 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Hello Ionic</ion-title>
-  </ion-navbar>
+  <header></header>
 </ion-header>
-
 
 <ion-content padding>
 
@@ -19,7 +13,11 @@
     Follow along on the tutorial section of the Ionic docs!
   </p>
   <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
+    <button ion-button color="primary" (click)="test()">Toggle Menu</button>
   </p>
 
 </ion-content>
+
+<ion-footer>
+  <footer></footer>
+</ion-footer>
