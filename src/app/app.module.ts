@@ -8,36 +8,23 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyApp } from './app.component';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
-import { ProjectPage } from '../pages/project/project';
-
-import { ComponentsModule } from '../components/components.module';
 // ngModule
+import { ComponentsModule } from '../components/components.module';
 import { ProjectPageModule } from '../pages/project/project.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    ProjectPage,
   ],
   imports: [
     BrowserModule,
-    ProjectPageModule,
     IonicModule.forRoot(MyApp),
     ComponentsModule,
+    ProjectPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    ProjectPage,
   ],
   providers: [
     StatusBar,

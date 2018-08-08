@@ -7,15 +7,18 @@ import { ProjectPage } from './project';
 import { ProjectForgeViewerPage } from './project-forge-viewer/project-forge-viewer';
 import { ProjectSchedulePage } from './project-schedule/project-schedule';
 import { ProjectSprintPage } from './project-sprint/project-sprint';
+import { TabsPageModule } from '../tabs/tabs.module';
 
 @NgModule({
   declarations: [
+    ProjectPage,
     ProjectForgeViewerPage,
     ProjectSchedulePage,
     ProjectSprintPage,
   ],
   imports: [
     IonicPageModule.forChild(ProjectPage),
+    TabsPageModule,
   ],
   entryComponents: [
     ProjectForgeViewerPage,
