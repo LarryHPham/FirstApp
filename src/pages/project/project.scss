@@ -1,7 +1,8 @@
 page-project {
     .upper-component {
         width: 100%;
-        height: 50%;
+        height: 30%;
+        position: relative;
         background-color: beige;
 
         & h3 {
@@ -11,7 +12,8 @@ page-project {
     
     .lower-component {
         width: 100%;
-        height: 50%;
+        height: 70%;
+        position: relative;
         background-color: rosybrown;
     }
 }
