@@ -11,6 +11,8 @@ import { MyApp } from './app.component';
 // ngModule
 import { ComponentsModule } from '../components/components.module';
 import { ProjectPageModule } from '../pages/project/project.module';
+import { LoginPageModule } from '../pages/login/login.module';
+import { ProjectSprintPageModule } from '../pages/project/project-sprint/project-sprint.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ProjectPageModule } from '../pages/project/project.module';
     IonicModule.forRoot(MyApp),
     ComponentsModule,
     ProjectPageModule,
+    LoginPageModule,
+    ProjectSprintPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
-
-/**
- * Generated class for the TabsPage tabs.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,12 +8,16 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class TabsPage {
 
-  taskBoardRoot = 'TaskBoardPage'
-  scheduleRoot = 'SchedulePage'
+  sprintRoot = 'ProjectSprintPage'
+  scheduleRoot = 'ProjectSchedulePage'
+  myIndex: number;
 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.myIndex = navParams.data.tabIndex || 0;
+  }
 
-  constructor(public navCtrl: NavController) {
-    
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad TabsPage');
   }
 
 }

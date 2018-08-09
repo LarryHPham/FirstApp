@@ -3,6 +3,7 @@ import { IonicPageModule } from 'ionic-angular';
 
 // sub pages
 import { ProjectSchedulePage } from './project-schedule';
+import { ComponentsModule } from '../../../components/components.module';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { ProjectSchedulePage } from './project-schedule';
   ],
   imports: [
     IonicPageModule.forChild(ProjectSchedulePage),
+    ComponentsModule,
   ],
 })
 export class ProjectSchedulePageModule {}
